@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+    --heading-font: "Monomakh", "Berkshire Swash", "Alex Brush";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+
+    --headline-color-on-white: #8A0E10;
+    --headline-color-on-color: #FFF;
+    --paragraph-color-on-white: #000;
+    --paragraph-color-on-color: #FFF;
+    --paragraph-background-color: #58595B;
+    
+    --nav-link-color: #FFF;
+    --nav-background-color: #8A0E10;
+    --nav-hover-link-color: #FFF;
+    --nav-hover-background-color: #700b0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- General tag styling for the page --- */
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+li {
+    list-style-type: none;
+}
+
+nav img {
+    align-self: center;
+    max-height: 85%;
+}
+
+/* --- Header and navigation --- */
+
+header {
+    background-color: var(--nav-background-color);
+}
+
+header nav {
+    margin: 0 auto;
+    width: 75%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#site_title {
+    margin-inline: 16px;
+    font-size: 48px;
+    color: white;
+}
+
+header nav a {
+    height: 100%;
+    width: 100%;
+
+    color: var(--nav-link-color);
+    background-color: var(--nav-background-color);
+    font-size: 1.2em;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* --- Main page content --- */
+
+#banner {
+    height: 40vw;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+main {
+    font-size: 18px;
+    text-align: center;
+}
+
+#description {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+    margin-block: 128px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#description div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: 16px;
+    font-size: 56px;
+}
+
+#description p {
+    margin: 32px;
+    font-size: larger;
+}
+
+#competitions {
+    width: 85%;
+    margin: 0 auto;
+    margin-block: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#competitions div {
+    margin-inline: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#competitions div :is(img, ul, h3, a) {
+    margin-block: 16px;
+}
+
+/* --- Footer content --- */
+
+footer {
+    background-color: #CCC;
+}
+
+footer nav {
+    height: 96px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 4px solid #DDD;
+}
+
+footer nav div {
+    height: 100%;
+    display: flex;
+}
+
+footer #links a {
+    padding-inline: 24px;
+}
+
+footer nav div a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    color: #222;
+    margin-inline: 4px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+footer #links a:hover {
+    background-color: #BBB;
+}
+
+footer #social img {
+    transition-duration: 2s;
+}
+
+footer #social img:hover {
+    filter: hue-rotate(360deg) invert(); /* lol */
+}
