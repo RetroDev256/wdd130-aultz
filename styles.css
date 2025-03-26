@@ -148,6 +148,10 @@ h1 {
     margin-block: 16px;
 }
 
+:is(#competitions, #description) img {
+    border-radius: 32px;
+}
+
 /* --- Footer content --- */
 
 footer {
