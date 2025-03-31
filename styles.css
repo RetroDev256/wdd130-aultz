@@ -152,6 +152,52 @@ h1 {
     border-radius: 32px;
 }
 
+/* --- Equipment subpage content --- */
+
+#intro {
+    width: 75%;
+    margin: 0 auto;
+    text-align: right;
+    margin-block: 128px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+h1 {
+    margin: 16px;
+    font-size: 56px;
+}
+
+#intro p {
+    margin: 32px;
+    font-size: larger;
+}
+
+#armor_types {
+    width: 85%;
+    margin: 0 auto;
+    margin-block: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: smaller;
+}
+
+#armor_types section {
+    margin-inline: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+#armor_types section :is(img, ul, h3, a) {
+    margin-block: 16px;
+}
+
+:is(#armor_types, #intro) img {
+    border-radius: 32px;
+}
+
 /* --- Footer content --- */
 
 footer {
